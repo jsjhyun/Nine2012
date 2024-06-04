@@ -41,12 +41,12 @@ namespace Nine2012
 
             if (current.Image == Properties.Resources.Green)
             {
-                current.Image = Properties.Resources.Blank;
+                current.Image = null;
                 lastImage = Properties.Resources.Green;
             }
             else if (current.Image == Properties.Resources.Pink)
             {
-                current.Image = Properties.Resources.Blank;
+                current.Image = null;
                 lastImage = Properties.Resources.Pink;
             }
         }
