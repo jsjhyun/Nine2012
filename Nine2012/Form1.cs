@@ -18,43 +18,78 @@ namespace Nine2012
 
         bool greenTurn = true;
 
-        PictureBox lastClicked;
-        Image lastImage;
+        bool greenMill = false;
+        bool pinkMill = false;
+        bool goingMove = false;
+
+        PictureBox focused;
+
+        char[,] board = new char[3, 8];
 
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void outerClick(object sender, MouseEventArgs e)
-        {
-            PictureBox current = sender as PictureBox;
-            lastClicked = current;
-            lastImage = lastClicked.Image;
-
-            current.Image = null;
-        }
-
-        private void innerClick(object sender, MouseEventArgs e)
-        {
-            PictureBox current = sender as PictureBox;
-
-            if (current.Image == Properties.Resources.Green)
+            
+            for (int i = 0; i < 3; i++)
             {
-                current.Image = null;
-                lastImage = Properties.Resources.Green;
-            }
-            else if (current.Image == Properties.Resources.Pink)
-            {
-                current.Image = null;
-                lastImage = Properties.Resources.Pink;
+                for (int j = 0; j < 8; j++)
+                {
+                    board[i, j] = 'B';
+                }
             }
         }
 
-        private void doubleClick(object sender, MouseEventArgs e)
+        private void pieceClick(object sender, MouseEventArgs e)
         {
-            PictureBox current = sender as PictureBox;
-            current.Image = lastImage;
+            PictureBox piece = sender as PictureBox;
+
+            if (greenMill)
+            {
+
+            }
+            else if (pinkMill)
+            {
+
+            }
+            else
+            {
+                if (greenTurn && piece.Tag.ToString() == "Green")
+                {
+                    focused = piece;
+                    goingMove = true;
+                }
+                else if (!greenTurn && piece.Tag.ToString() == "Pink")
+                {
+                    focused = piece;
+                    goingMove = true;
+                }
+            }
+        }
+
+        private void blankClick(object sender, MouseEventArgs e)
+        {
+            PictureBox blank = sender as PictureBox;
+
+            if (goingMove)
+            {
+                focused.Location = blank.Location;
+                goingMove = false;
+
+                int row = blank.Tag.ToString()[0] - '0';
+                int col = blank.Tag.ToString()[1] - '0';
+
+                if (focused.Tag.ToString() == "Green")
+                {
+                    board[row, col] = 'G';
+                }
+                else if (focused.Tag.ToString() == "Pink")
+                {
+                    board[row, col] = 'P';
+                }
+
+                focused = null;
+                greenTurn = !greenTurn;
+            }
         }
     }
 }
