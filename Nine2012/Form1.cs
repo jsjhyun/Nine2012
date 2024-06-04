@@ -17,9 +17,44 @@ namespace Nine2012
         int pinkCount = 9;
 
         bool greenTurn = true;
+
+        PictureBox lastClicked;
+        Image lastImage;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void outerClick(object sender, MouseEventArgs e)
+        {
+            PictureBox current = sender as PictureBox;
+            lastClicked = current;
+            lastImage = lastClicked.Image;
+
+            current.Image = null;
+        }
+
+        private void innerClick(object sender, MouseEventArgs e)
+        {
+            PictureBox current = sender as PictureBox;
+
+            if (current.Image == Properties.Resources.Green)
+            {
+                current.Image = Properties.Resources.Blank;
+                lastImage = Properties.Resources.Green;
+            }
+            else if (current.Image == Properties.Resources.Pink)
+            {
+                current.Image = Properties.Resources.Blank;
+                lastImage = Properties.Resources.Pink;
+            }
+        }
+
+        private void doubleClick(object sender, MouseEventArgs e)
+        {
+            PictureBox current = sender as PictureBox;
+            current.Image = lastImage;
         }
     }
 }
