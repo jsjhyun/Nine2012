@@ -20,6 +20,7 @@ namespace Nine2012
 
         bool greenMill = false;
         bool pinkMill = false;
+
         bool goingMove = false;
 
         PictureBox focused;
@@ -81,14 +82,25 @@ namespace Nine2012
                 if (focused.Tag.ToString() == "Green")
                 {
                     board[row, col] = 'G';
+                    // if (greenMill) { }
                 }
                 else if (focused.Tag.ToString() == "Pink")
                 {
                     board[row, col] = 'P';
+                    // if (pinkMill) { }
                 }
 
                 focused = null;
                 greenTurn = !greenTurn;
+
+                if (greenTurn)
+                {
+                    textBoxMessage.Text = "Green's Turn!";
+                }
+                else
+                {
+                    textBoxMessage.Text = "Pink's Turn!";
+                }
             }
         }
     }
