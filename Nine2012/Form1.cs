@@ -15,22 +15,19 @@ namespace Nine2012
     public partial class Form1 : Form
     {
         bool greenTurn = true;
-
-        bool greenMill = false;
-        bool pinkMill = false;
-
+        bool greenMill = false; bool pinkMill = false;
         bool goingMove = false;
 
         PictureBox focused;
 
         char[,] board = new char[3, 8];
-        int[,] greenLoc = new int[9, 2];
-        int[,] pinkLoc = new int[9, 2];
+        int[,] greenLoc = new int[9, 2]; // 녹색 피스의 위치
+        int[,] pinkLoc = new int[9, 2]; // 핑크 피스의 위치
 
-        int greenCnt = 9;
-        int pinkCnt = 9;
-        int waitGreen = 9;
-        int waitPink = 9;
+        int greenCnt = 9; 
+        int pinkCnt = 9; 
+        int waitGreen = 9; // 놓을 녹색 피스 수
+        int waitPink = 9; // 놓을 핑크 피스 수
 
         public Form1()
         {
@@ -43,8 +40,8 @@ namespace Nine2012
                     board[i, j] = 'B';
                 }
             }
-
-            for(int i=0;i<9;i++)
+            // 피스 위치 초기화
+            for (int i = 0; i < 9; i++)
             {
                 greenLoc[i, 0] = -1;
                 greenLoc[i, 1] = -1;
@@ -59,6 +56,7 @@ namespace Nine2012
             string color = piece.Tag.ToString();
             string[] tmp = color.Split('-');
 
+            // 밀을 생성한 경우 다른 피스를 선택해 제거
             if (greenMill)
             {
                 if (tmp[0] == "Pink")
@@ -66,31 +64,35 @@ namespace Nine2012
                     int row = pinkLoc[Int32.Parse(tmp[1]), 0];
                     int col = pinkLoc[Int32.Parse(tmp[1]), 1];
 
+                    // 선택된 피스가 밀에 포함되어 있지 않으면 메시지
                     if (chkMill(row, col) != 1)
                     {
                         textBoxMessage.Text = "Impossible!";
                     }
                     else
                     {
+                        // 피스 제거 및 게임 상태 업데이트
                         piece.Visible = false;
                         pinkCnt--;
-                        textBoxPinkCount.Text = "P : " + pinkCnt;
+                        textBoxPinkCount.Text = "P : " + pinkCnt; // 남은 피스 개수 표시
 
+                        // 승리 조건 검사1 : 피스 수가 3개 미만인 경우 
                         if (pinkCnt < 3)
                         {
                             MessageBox.Show("Green Win!");
                             Application.Restart();
                         }
-
                         board[row, col] = 'B';
                         greenMill = false;
                         textBoxMessage.Text = "Pink's Turn!";
                     }
-                } else
+                }
+                else
                 {
-                    textBoxMessage.Text = "Select a Pink!";
+                    textBoxMessage.Text = "Select Pink!";
                 }
             }
+            // 밀을 생성한 경우 다른 피스를 선택해 제거
             else if (pinkMill)
             {
                 if (tmp[0] == "Green")
@@ -104,10 +106,12 @@ namespace Nine2012
                     }
                     else
                     {
+                        // 피스 제거 및 게임 상태 업데이트
                         piece.Visible = false;
                         greenCnt--;
-                        textBoxGreenCount.Text = "G : " + greenCnt;
+                        textBoxGreenCount.Text = "G : " + greenCnt; // 남은 피스 개수 표시
 
+                        // 승리 조건 검사1 : 피스 수가 3개 미만인 경우 
                         if (pinkCnt < 3)
                         {
                             MessageBox.Show("Pink Win!");
@@ -121,7 +125,7 @@ namespace Nine2012
                 }
                 else
                 {
-                    textBoxMessage.Text = "Select a Green!";
+                    textBoxMessage.Text = "Select Green!";
                 }
             }
             else
@@ -142,6 +146,7 @@ namespace Nine2012
         private void blankClick(object sender, MouseEventArgs e)
         {
             PictureBox blank = sender as PictureBox;
+
             try
             {
                 string color = focused.Tag.ToString();
@@ -167,7 +172,6 @@ namespace Nine2012
                         else waitGreen--;
 
                         focused.Location = blank.Location;
-
                         greenLoc[Int32.Parse(tmp[1]), 0] = row;
                         greenLoc[Int32.Parse(tmp[1]), 1] = col;
                         board[row, col] = 'G';
@@ -180,7 +184,7 @@ namespace Nine2012
                         }
                         else
                         {
-                            if(chkWin())
+                            if (chkWin())
                             {
                                 MessageBox.Show("Green Win!");
                                 Application.Restart();
@@ -202,7 +206,6 @@ namespace Nine2012
                         else waitPink--;
 
                         focused.Location = blank.Location;
-
                         pinkLoc[Int32.Parse(tmp[1]), 0] = row;
                         pinkLoc[Int32.Parse(tmp[1]), 1] = col;
 
@@ -222,20 +225,20 @@ namespace Nine2012
                             else textBoxMessage.Text = "Green's Turn!";
                         }
                     }
-
                     greenTurn = !greenTurn;
                 }
-            } catch (Exception ex)
-            {
-
             }
+            catch (Exception ex) { }
         }
 
+        // 주어진 위치에서 밀을 형성하는지 검사하는 로직
         private int chkMill(int row, int col)
         {
             if (row < 0 || col < 0 || row > 2 || col > 7) return -1;
+
             char c = 'G';
-            if(!greenTurn)
+
+            if (!greenTurn)
             {
                 c = 'P';
             }
@@ -291,17 +294,20 @@ namespace Nine2012
             else return -1;
         }
 
+        // 승리 조건 검사 로직2 : 더 이상 움직이지 못할 경우
         private bool chkWin()
         {
-            if(greenTurn)
+            if (greenTurn)
             {
                 if (waitPink != 0) return false;
-                for(int i=0; i<9; i++)
+
+                for (int i = 0; i < 9; i++)
                 {
                     if (board[pinkLoc[i, 0], pinkLoc[i, 1]] != 'P') continue;
-                    for(int j=0; j<3; j++)
+
+                    for (int j = 0; j < 3; j++)
                     {
-                        for(int k=0; k<8; k++)
+                        for (int k = 0; k < 8; k++)
                         {
                             if (board[j, k] != 'B') continue;
                             if (chkToGo(pinkLoc[i, 0], pinkLoc[i, 1], j, k)) return false;
@@ -309,12 +315,15 @@ namespace Nine2012
                     }
                 }
                 return true;
-            } else
+            }
+            else
             {
                 if (waitGreen != 0) return false;
+
                 for (int i = 0; i < 9; i++)
                 {
                     if (board[greenLoc[i, 0], greenLoc[i, 1]] != 'G') continue;
+
                     for (int j = 0; j < 3; j++)
                     {
                         for (int k = 0; k < 8; k++)
@@ -328,9 +337,10 @@ namespace Nine2012
             }
         }
 
+        // 이동 가능 여부 검사
         private bool chkToGo(int oldRow, int oldCol, int row, int col)
         {
-            if((oldCol == 0 && col == 7) || (oldCol == 7 && col == 0))
+            if ((oldCol == 0 && col == 7) || (oldCol == 7 && col == 0))
             {
                 if (row == oldRow) return true;
                 else return false;
@@ -339,19 +349,18 @@ namespace Nine2012
             int rowSub = oldRow - row;
             int colSub = oldCol - col;
 
-            if(rowSub == 1 || rowSub == -1)
+            if (rowSub == 1 || rowSub == -1)
             {
-                if(oldCol != col) return false;
+                if (oldCol != col) return false;
                 if (col == 0 || col == 2 || col == 4 || col == 6) return false;
                 return true;
             }
 
-            if(colSub == 1 || colSub == -1)
+            if (colSub == 1 || colSub == -1)
             {
                 if (row == oldRow) return true;
                 else return false;
             }
-
             return false;
         }
     }
