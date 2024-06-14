@@ -15,7 +15,9 @@ namespace Nine2012
     public partial class Form1 : Form
     {
         bool greenTurn = true;
+
         bool greenMill = false; bool pinkMill = false;
+
         bool goingMove = false;
 
         PictureBox focused;
@@ -313,6 +315,7 @@ namespace Nine2012
                             if (chkToGo(pinkLoc[i, 0], pinkLoc[i, 1], j, k)) return false;
                         }
                     }
+
                 }
                 return true;
             }
@@ -336,6 +339,7 @@ namespace Nine2012
                 return true;
             }
         }
+
 
         // 이동 가능 여부 검사
         private bool chkToGo(int oldRow, int oldCol, int row, int col)
