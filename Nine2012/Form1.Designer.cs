@@ -123,9 +123,10 @@
             // 
             this.pbBoard.Cursor = System.Windows.Forms.Cursors.Default;
             this.pbBoard.Image = global::Nine2012.Properties.Resources.Board;
-            this.pbBoard.Location = new System.Drawing.Point(92, 60);
+            this.pbBoard.Location = new System.Drawing.Point(131, 90);
+            this.pbBoard.Margin = new System.Windows.Forms.Padding(4);
             this.pbBoard.Name = "pbBoard";
-            this.pbBoard.Size = new System.Drawing.Size(700, 700);
+            this.pbBoard.Size = new System.Drawing.Size(1000, 1050);
             this.pbBoard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBoard.TabIndex = 0;
             this.pbBoard.TabStop = false;
@@ -134,9 +135,10 @@
             // 
             this.textBoxMessage.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBoxMessage.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMessage.Location = new System.Drawing.Point(342, 12);
+            this.textBoxMessage.Location = new System.Drawing.Point(366, 18);
+            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(200, 35);
+            this.textBoxMessage.Size = new System.Drawing.Size(502, 49);
             this.textBoxMessage.TabIndex = 1;
             this.textBoxMessage.TabStop = false;
             this.textBoxMessage.Text = "Green\'s Turn!";
@@ -145,9 +147,10 @@
             // textBoxGreenCount
             // 
             this.textBoxGreenCount.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxGreenCount.Location = new System.Drawing.Point(12, 12);
+            this.textBoxGreenCount.Location = new System.Drawing.Point(17, 18);
+            this.textBoxGreenCount.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxGreenCount.Name = "textBoxGreenCount";
-            this.textBoxGreenCount.Size = new System.Drawing.Size(50, 33);
+            this.textBoxGreenCount.Size = new System.Drawing.Size(70, 45);
             this.textBoxGreenCount.TabIndex = 2;
             this.textBoxGreenCount.TabStop = false;
             this.textBoxGreenCount.Text = "G : 9";
@@ -156,9 +159,10 @@
             // textBoxPinkCount
             // 
             this.textBoxPinkCount.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxPinkCount.Location = new System.Drawing.Point(823, 12);
+            this.textBoxPinkCount.Location = new System.Drawing.Point(1176, 18);
+            this.textBoxPinkCount.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPinkCount.Name = "textBoxPinkCount";
-            this.textBoxPinkCount.Size = new System.Drawing.Size(50, 35);
+            this.textBoxPinkCount.Size = new System.Drawing.Size(70, 49);
             this.textBoxPinkCount.TabIndex = 3;
             this.textBoxPinkCount.TabStop = false;
             this.textBoxPinkCount.Text = "P : 9";
@@ -166,9 +170,10 @@
             // 
             // pbBlank00
             // 
-            this.pbBlank00.Location = new System.Drawing.Point(98, 66);
+            this.pbBlank00.Location = new System.Drawing.Point(140, 99);
+            this.pbBlank00.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank00.Name = "pbBlank00";
-            this.pbBlank00.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank00.Size = new System.Drawing.Size(71, 75);
             this.pbBlank00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank00.TabIndex = 22;
             this.pbBlank00.TabStop = false;
@@ -177,9 +182,10 @@
             // 
             // pbBlank02
             // 
-            this.pbBlank02.Location = new System.Drawing.Point(735, 66);
+            this.pbBlank02.Location = new System.Drawing.Point(1050, 99);
+            this.pbBlank02.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank02.Name = "pbBlank02";
-            this.pbBlank02.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank02.Size = new System.Drawing.Size(71, 75);
             this.pbBlank02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank02.TabIndex = 23;
             this.pbBlank02.TabStop = false;
@@ -188,9 +194,10 @@
             // 
             // pbBlank01
             // 
-            this.pbBlank01.Location = new System.Drawing.Point(417, 66);
+            this.pbBlank01.Location = new System.Drawing.Point(596, 99);
+            this.pbBlank01.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank01.Name = "pbBlank01";
-            this.pbBlank01.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank01.Size = new System.Drawing.Size(71, 75);
             this.pbBlank01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank01.TabIndex = 24;
             this.pbBlank01.TabStop = false;
@@ -199,9 +206,10 @@
             // 
             // pbBlank07
             // 
-            this.pbBlank07.Location = new System.Drawing.Point(98, 384);
+            this.pbBlank07.Location = new System.Drawing.Point(140, 576);
+            this.pbBlank07.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank07.Name = "pbBlank07";
-            this.pbBlank07.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank07.Size = new System.Drawing.Size(71, 75);
             this.pbBlank07.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank07.TabIndex = 25;
             this.pbBlank07.TabStop = false;
@@ -210,9 +218,10 @@
             // 
             // pbBlank17
             // 
-            this.pbBlank17.Location = new System.Drawing.Point(204, 384);
+            this.pbBlank17.Location = new System.Drawing.Point(291, 576);
+            this.pbBlank17.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank17.Name = "pbBlank17";
-            this.pbBlank17.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank17.Size = new System.Drawing.Size(71, 75);
             this.pbBlank17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank17.TabIndex = 26;
             this.pbBlank17.TabStop = false;
@@ -221,9 +230,10 @@
             // 
             // pbBlank23
             // 
-            this.pbBlank23.Location = new System.Drawing.Point(523, 384);
+            this.pbBlank23.Location = new System.Drawing.Point(747, 576);
+            this.pbBlank23.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank23.Name = "pbBlank23";
-            this.pbBlank23.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank23.Size = new System.Drawing.Size(71, 75);
             this.pbBlank23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank23.TabIndex = 27;
             this.pbBlank23.TabStop = false;
@@ -232,9 +242,10 @@
             // 
             // pbBlank27
             // 
-            this.pbBlank27.Location = new System.Drawing.Point(310, 384);
+            this.pbBlank27.Location = new System.Drawing.Point(443, 576);
+            this.pbBlank27.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank27.Name = "pbBlank27";
-            this.pbBlank27.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank27.Size = new System.Drawing.Size(71, 75);
             this.pbBlank27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank27.TabIndex = 28;
             this.pbBlank27.TabStop = false;
@@ -243,9 +254,10 @@
             // 
             // pbBlank13
             // 
-            this.pbBlank13.Location = new System.Drawing.Point(629, 384);
+            this.pbBlank13.Location = new System.Drawing.Point(899, 576);
+            this.pbBlank13.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank13.Name = "pbBlank13";
-            this.pbBlank13.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank13.Size = new System.Drawing.Size(71, 75);
             this.pbBlank13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank13.TabIndex = 29;
             this.pbBlank13.TabStop = false;
@@ -254,9 +266,10 @@
             // 
             // pbBlank03
             // 
-            this.pbBlank03.Location = new System.Drawing.Point(735, 384);
+            this.pbBlank03.Location = new System.Drawing.Point(1050, 576);
+            this.pbBlank03.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank03.Name = "pbBlank03";
-            this.pbBlank03.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank03.Size = new System.Drawing.Size(71, 75);
             this.pbBlank03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank03.TabIndex = 30;
             this.pbBlank03.TabStop = false;
@@ -265,9 +278,10 @@
             // 
             // pbBlank04
             // 
-            this.pbBlank04.Location = new System.Drawing.Point(735, 702);
+            this.pbBlank04.Location = new System.Drawing.Point(1050, 1050);
+            this.pbBlank04.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank04.Name = "pbBlank04";
-            this.pbBlank04.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank04.Size = new System.Drawing.Size(71, 75);
             this.pbBlank04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank04.TabIndex = 31;
             this.pbBlank04.TabStop = false;
@@ -276,9 +290,10 @@
             // 
             // pbBlank05
             // 
-            this.pbBlank05.Location = new System.Drawing.Point(417, 702);
+            this.pbBlank05.Location = new System.Drawing.Point(596, 1053);
+            this.pbBlank05.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank05.Name = "pbBlank05";
-            this.pbBlank05.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank05.Size = new System.Drawing.Size(71, 75);
             this.pbBlank05.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank05.TabIndex = 32;
             this.pbBlank05.TabStop = false;
@@ -287,9 +302,10 @@
             // 
             // pbBlank06
             // 
-            this.pbBlank06.Location = new System.Drawing.Point(98, 702);
+            this.pbBlank06.Location = new System.Drawing.Point(140, 1053);
+            this.pbBlank06.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank06.Name = "pbBlank06";
-            this.pbBlank06.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank06.Size = new System.Drawing.Size(71, 75);
             this.pbBlank06.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank06.TabIndex = 33;
             this.pbBlank06.TabStop = false;
@@ -298,9 +314,10 @@
             // 
             // pbBlank16
             // 
-            this.pbBlank16.Location = new System.Drawing.Point(204, 596);
+            this.pbBlank16.Location = new System.Drawing.Point(291, 894);
+            this.pbBlank16.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank16.Name = "pbBlank16";
-            this.pbBlank16.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank16.Size = new System.Drawing.Size(71, 75);
             this.pbBlank16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank16.TabIndex = 34;
             this.pbBlank16.TabStop = false;
@@ -309,9 +326,10 @@
             // 
             // pbBlank15
             // 
-            this.pbBlank15.Location = new System.Drawing.Point(417, 596);
+            this.pbBlank15.Location = new System.Drawing.Point(596, 894);
+            this.pbBlank15.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank15.Name = "pbBlank15";
-            this.pbBlank15.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank15.Size = new System.Drawing.Size(71, 75);
             this.pbBlank15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank15.TabIndex = 35;
             this.pbBlank15.TabStop = false;
@@ -320,9 +338,10 @@
             // 
             // pbBlank14
             // 
-            this.pbBlank14.Location = new System.Drawing.Point(629, 596);
+            this.pbBlank14.Location = new System.Drawing.Point(899, 894);
+            this.pbBlank14.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank14.Name = "pbBlank14";
-            this.pbBlank14.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank14.Size = new System.Drawing.Size(71, 75);
             this.pbBlank14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank14.TabIndex = 36;
             this.pbBlank14.TabStop = false;
@@ -331,9 +350,10 @@
             // 
             // pbBlank25
             // 
-            this.pbBlank25.Location = new System.Drawing.Point(417, 491);
+            this.pbBlank25.Location = new System.Drawing.Point(595, 736);
+            this.pbBlank25.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank25.Name = "pbBlank25";
-            this.pbBlank25.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank25.Size = new System.Drawing.Size(71, 75);
             this.pbBlank25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank25.TabIndex = 37;
             this.pbBlank25.TabStop = false;
@@ -342,9 +362,10 @@
             // 
             // pbBlank26
             // 
-            this.pbBlank26.Location = new System.Drawing.Point(310, 491);
+            this.pbBlank26.Location = new System.Drawing.Point(443, 736);
+            this.pbBlank26.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank26.Name = "pbBlank26";
-            this.pbBlank26.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank26.Size = new System.Drawing.Size(71, 75);
             this.pbBlank26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank26.TabIndex = 38;
             this.pbBlank26.TabStop = false;
@@ -353,9 +374,10 @@
             // 
             // pbBlank24
             // 
-            this.pbBlank24.Location = new System.Drawing.Point(523, 491);
+            this.pbBlank24.Location = new System.Drawing.Point(747, 736);
+            this.pbBlank24.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank24.Name = "pbBlank24";
-            this.pbBlank24.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank24.Size = new System.Drawing.Size(71, 75);
             this.pbBlank24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank24.TabIndex = 39;
             this.pbBlank24.TabStop = false;
@@ -364,9 +386,10 @@
             // 
             // pbBlank21
             // 
-            this.pbBlank21.Location = new System.Drawing.Point(417, 279);
+            this.pbBlank21.Location = new System.Drawing.Point(596, 418);
+            this.pbBlank21.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank21.Name = "pbBlank21";
-            this.pbBlank21.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank21.Size = new System.Drawing.Size(71, 75);
             this.pbBlank21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank21.TabIndex = 40;
             this.pbBlank21.TabStop = false;
@@ -375,9 +398,10 @@
             // 
             // pbBlank20
             // 
-            this.pbBlank20.Location = new System.Drawing.Point(310, 279);
+            this.pbBlank20.Location = new System.Drawing.Point(443, 418);
+            this.pbBlank20.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank20.Name = "pbBlank20";
-            this.pbBlank20.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank20.Size = new System.Drawing.Size(71, 75);
             this.pbBlank20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank20.TabIndex = 41;
             this.pbBlank20.TabStop = false;
@@ -386,9 +410,10 @@
             // 
             // pbBlank22
             // 
-            this.pbBlank22.Location = new System.Drawing.Point(523, 279);
+            this.pbBlank22.Location = new System.Drawing.Point(747, 418);
+            this.pbBlank22.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank22.Name = "pbBlank22";
-            this.pbBlank22.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank22.Size = new System.Drawing.Size(71, 75);
             this.pbBlank22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank22.TabIndex = 42;
             this.pbBlank22.TabStop = false;
@@ -397,9 +422,10 @@
             // 
             // pbBlank11
             // 
-            this.pbBlank11.Location = new System.Drawing.Point(417, 172);
+            this.pbBlank11.Location = new System.Drawing.Point(596, 258);
+            this.pbBlank11.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank11.Name = "pbBlank11";
-            this.pbBlank11.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank11.Size = new System.Drawing.Size(71, 75);
             this.pbBlank11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank11.TabIndex = 43;
             this.pbBlank11.TabStop = false;
@@ -408,9 +434,10 @@
             // 
             // pbBlank10
             // 
-            this.pbBlank10.Location = new System.Drawing.Point(204, 172);
+            this.pbBlank10.Location = new System.Drawing.Point(291, 258);
+            this.pbBlank10.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank10.Name = "pbBlank10";
-            this.pbBlank10.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank10.Size = new System.Drawing.Size(71, 75);
             this.pbBlank10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank10.TabIndex = 44;
             this.pbBlank10.TabStop = false;
@@ -419,9 +446,10 @@
             // 
             // pbBlank12
             // 
-            this.pbBlank12.Location = new System.Drawing.Point(629, 172);
+            this.pbBlank12.Location = new System.Drawing.Point(899, 258);
+            this.pbBlank12.Margin = new System.Windows.Forms.Padding(4);
             this.pbBlank12.Name = "pbBlank12";
-            this.pbBlank12.Size = new System.Drawing.Size(50, 50);
+            this.pbBlank12.Size = new System.Drawing.Size(71, 75);
             this.pbBlank12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBlank12.TabIndex = 45;
             this.pbBlank12.TabStop = false;
@@ -432,241 +460,259 @@
             // 
             this.pbGreen7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen7.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen7.Location = new System.Drawing.Point(12, 540);
+            this.pbGreen7.Location = new System.Drawing.Point(17, 810);
+            this.pbGreen7.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen7.Name = "pbGreen7";
-            this.pbGreen7.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen7.Size = new System.Drawing.Size(71, 75);
             this.pbGreen7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen7.TabIndex = 54;
             this.pbGreen7.TabStop = false;
-            this.pbGreen7.Tag = "Green";
+            this.pbGreen7.Tag = "Green-7";
             this.pbGreen7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen9
             // 
             this.pbGreen9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen9.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen9.Location = new System.Drawing.Point(12, 700);
+            this.pbGreen9.Location = new System.Drawing.Point(17, 1050);
+            this.pbGreen9.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen9.Name = "pbGreen9";
-            this.pbGreen9.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen9.Size = new System.Drawing.Size(71, 75);
             this.pbGreen9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen9.TabIndex = 53;
             this.pbGreen9.TabStop = false;
-            this.pbGreen9.Tag = "Green";
+            this.pbGreen9.Tag = "Green-0";
             this.pbGreen9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen8
             // 
             this.pbGreen8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen8.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen8.Location = new System.Drawing.Point(12, 620);
+            this.pbGreen8.Location = new System.Drawing.Point(17, 930);
+            this.pbGreen8.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen8.Name = "pbGreen8";
-            this.pbGreen8.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen8.Size = new System.Drawing.Size(71, 75);
             this.pbGreen8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen8.TabIndex = 52;
             this.pbGreen8.TabStop = false;
-            this.pbGreen8.Tag = "Green";
+            this.pbGreen8.Tag = "Green-8";
             this.pbGreen8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen6
             // 
             this.pbGreen6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen6.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen6.Location = new System.Drawing.Point(12, 460);
+            this.pbGreen6.Location = new System.Drawing.Point(17, 690);
+            this.pbGreen6.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen6.Name = "pbGreen6";
-            this.pbGreen6.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen6.Size = new System.Drawing.Size(71, 75);
             this.pbGreen6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen6.TabIndex = 51;
             this.pbGreen6.TabStop = false;
-            this.pbGreen6.Tag = "Green";
+            this.pbGreen6.Tag = "Green-6";
             this.pbGreen6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen5
             // 
             this.pbGreen5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen5.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen5.Location = new System.Drawing.Point(12, 380);
+            this.pbGreen5.Location = new System.Drawing.Point(17, 570);
+            this.pbGreen5.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen5.Name = "pbGreen5";
-            this.pbGreen5.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen5.Size = new System.Drawing.Size(71, 75);
             this.pbGreen5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen5.TabIndex = 50;
             this.pbGreen5.TabStop = false;
-            this.pbGreen5.Tag = "Green";
+            this.pbGreen5.Tag = "Green-5";
             this.pbGreen5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen4
             // 
             this.pbGreen4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen4.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen4.Location = new System.Drawing.Point(12, 300);
+            this.pbGreen4.Location = new System.Drawing.Point(17, 450);
+            this.pbGreen4.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen4.Name = "pbGreen4";
-            this.pbGreen4.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen4.Size = new System.Drawing.Size(71, 75);
             this.pbGreen4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen4.TabIndex = 49;
             this.pbGreen4.TabStop = false;
-            this.pbGreen4.Tag = "Green";
+            this.pbGreen4.Tag = "Green-4";
             this.pbGreen4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen3
             // 
             this.pbGreen3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen3.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen3.Location = new System.Drawing.Point(12, 220);
+            this.pbGreen3.Location = new System.Drawing.Point(17, 330);
+            this.pbGreen3.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen3.Name = "pbGreen3";
-            this.pbGreen3.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen3.Size = new System.Drawing.Size(71, 75);
             this.pbGreen3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen3.TabIndex = 48;
             this.pbGreen3.TabStop = false;
-            this.pbGreen3.Tag = "Green";
+            this.pbGreen3.Tag = "Green-3";
             this.pbGreen3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen2
             // 
             this.pbGreen2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen2.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen2.Location = new System.Drawing.Point(12, 140);
+            this.pbGreen2.Location = new System.Drawing.Point(17, 210);
+            this.pbGreen2.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen2.Name = "pbGreen2";
-            this.pbGreen2.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen2.Size = new System.Drawing.Size(71, 75);
             this.pbGreen2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen2.TabIndex = 47;
             this.pbGreen2.TabStop = false;
-            this.pbGreen2.Tag = "Green";
+            this.pbGreen2.Tag = "Green-2";
             this.pbGreen2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbGreen1
             // 
             this.pbGreen1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGreen1.Image = global::Nine2012.Properties.Resources.Green;
-            this.pbGreen1.Location = new System.Drawing.Point(12, 60);
+            this.pbGreen1.Location = new System.Drawing.Point(17, 90);
+            this.pbGreen1.Margin = new System.Windows.Forms.Padding(4);
             this.pbGreen1.Name = "pbGreen1";
-            this.pbGreen1.Size = new System.Drawing.Size(50, 50);
+            this.pbGreen1.Size = new System.Drawing.Size(71, 75);
             this.pbGreen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreen1.TabIndex = 46;
             this.pbGreen1.TabStop = false;
-            this.pbGreen1.Tag = "Green";
+            this.pbGreen1.Tag = "Green-1";
             this.pbGreen1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink9
             // 
             this.pbPink9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink9.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink9.Location = new System.Drawing.Point(823, 700);
+            this.pbPink9.Location = new System.Drawing.Point(1176, 1050);
+            this.pbPink9.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink9.Name = "pbPink9";
-            this.pbPink9.Size = new System.Drawing.Size(50, 50);
+            this.pbPink9.Size = new System.Drawing.Size(71, 75);
             this.pbPink9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink9.TabIndex = 63;
             this.pbPink9.TabStop = false;
-            this.pbPink9.Tag = "Pink";
+            this.pbPink9.Tag = "Pink-0";
             this.pbPink9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPin8
             // 
             this.pbPin8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPin8.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPin8.Location = new System.Drawing.Point(823, 620);
+            this.pbPin8.Location = new System.Drawing.Point(1176, 930);
+            this.pbPin8.Margin = new System.Windows.Forms.Padding(4);
             this.pbPin8.Name = "pbPin8";
-            this.pbPin8.Size = new System.Drawing.Size(50, 50);
+            this.pbPin8.Size = new System.Drawing.Size(71, 75);
             this.pbPin8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPin8.TabIndex = 62;
             this.pbPin8.TabStop = false;
-            this.pbPin8.Tag = "Pink";
+            this.pbPin8.Tag = "Pink-8";
             this.pbPin8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink7
             // 
             this.pbPink7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink7.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink7.Location = new System.Drawing.Point(823, 540);
+            this.pbPink7.Location = new System.Drawing.Point(1176, 810);
+            this.pbPink7.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink7.Name = "pbPink7";
-            this.pbPink7.Size = new System.Drawing.Size(50, 50);
+            this.pbPink7.Size = new System.Drawing.Size(71, 75);
             this.pbPink7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink7.TabIndex = 61;
             this.pbPink7.TabStop = false;
-            this.pbPink7.Tag = "Pink";
+            this.pbPink7.Tag = "Pink-7";
             this.pbPink7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink6
             // 
             this.pbPink6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink6.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink6.Location = new System.Drawing.Point(823, 460);
+            this.pbPink6.Location = new System.Drawing.Point(1176, 690);
+            this.pbPink6.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink6.Name = "pbPink6";
-            this.pbPink6.Size = new System.Drawing.Size(50, 50);
+            this.pbPink6.Size = new System.Drawing.Size(71, 75);
             this.pbPink6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink6.TabIndex = 60;
             this.pbPink6.TabStop = false;
-            this.pbPink6.Tag = "Pink";
+            this.pbPink6.Tag = "Pink-6";
             this.pbPink6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink5
             // 
             this.pbPink5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink5.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink5.Location = new System.Drawing.Point(823, 380);
+            this.pbPink5.Location = new System.Drawing.Point(1176, 570);
+            this.pbPink5.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink5.Name = "pbPink5";
-            this.pbPink5.Size = new System.Drawing.Size(50, 50);
+            this.pbPink5.Size = new System.Drawing.Size(71, 75);
             this.pbPink5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink5.TabIndex = 59;
             this.pbPink5.TabStop = false;
-            this.pbPink5.Tag = "Pink";
+            this.pbPink5.Tag = "Pink-5";
             this.pbPink5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink4
             // 
             this.pbPink4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink4.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink4.Location = new System.Drawing.Point(823, 300);
+            this.pbPink4.Location = new System.Drawing.Point(1176, 450);
+            this.pbPink4.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink4.Name = "pbPink4";
-            this.pbPink4.Size = new System.Drawing.Size(50, 50);
+            this.pbPink4.Size = new System.Drawing.Size(71, 75);
             this.pbPink4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink4.TabIndex = 58;
             this.pbPink4.TabStop = false;
-            this.pbPink4.Tag = "Pink";
+            this.pbPink4.Tag = "Pink-4";
             this.pbPink4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink3
             // 
             this.pbPink3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink3.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink3.Location = new System.Drawing.Point(823, 220);
+            this.pbPink3.Location = new System.Drawing.Point(1176, 330);
+            this.pbPink3.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink3.Name = "pbPink3";
-            this.pbPink3.Size = new System.Drawing.Size(50, 50);
+            this.pbPink3.Size = new System.Drawing.Size(71, 75);
             this.pbPink3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink3.TabIndex = 57;
             this.pbPink3.TabStop = false;
-            this.pbPink3.Tag = "Pink";
+            this.pbPink3.Tag = "Pink-3";
             this.pbPink3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink2
             // 
             this.pbPink2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink2.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink2.Location = new System.Drawing.Point(823, 140);
+            this.pbPink2.Location = new System.Drawing.Point(1176, 210);
+            this.pbPink2.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink2.Name = "pbPink2";
-            this.pbPink2.Size = new System.Drawing.Size(50, 50);
+            this.pbPink2.Size = new System.Drawing.Size(71, 75);
             this.pbPink2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink2.TabIndex = 56;
             this.pbPink2.TabStop = false;
-            this.pbPink2.Tag = "Pink";
+            this.pbPink2.Tag = "Pink-2";
             this.pbPink2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // pbPink1
             // 
             this.pbPink1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbPink1.Image = global::Nine2012.Properties.Resources.Pink;
-            this.pbPink1.Location = new System.Drawing.Point(823, 60);
+            this.pbPink1.Location = new System.Drawing.Point(1176, 90);
+            this.pbPink1.Margin = new System.Windows.Forms.Padding(4);
             this.pbPink1.Name = "pbPink1";
-            this.pbPink1.Size = new System.Drawing.Size(50, 50);
+            this.pbPink1.Size = new System.Drawing.Size(71, 75);
             this.pbPink1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPink1.TabIndex = 55;
             this.pbPink1.TabStop = false;
-            this.pbPink1.Tag = "Pink";
+            this.pbPink1.Tag = "Pink-1";
             this.pbPink1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pieceClick);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 773);
+            this.ClientSize = new System.Drawing.Size(1264, 1160);
             this.Controls.Add(this.pbPink9);
             this.Controls.Add(this.pbPin8);
             this.Controls.Add(this.pbPink7);
@@ -713,6 +759,7 @@
             this.Controls.Add(this.textBoxGreenCount);
             this.Controls.Add(this.textBoxMessage);
             this.Controls.Add(this.pbBoard);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbBoard)).EndInit();
