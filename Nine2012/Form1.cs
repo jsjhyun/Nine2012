@@ -16,9 +16,13 @@ namespace Nine2012
     {
         bool greenTurn = true;
 
-        bool greenMill = false; bool pinkMill = false;
+        bool greenMill = false;
+        bool pinkMill = false;
 
         bool goingMove = false;
+
+        bool greenFly = false;
+        bool pinkFly = false;
 
         PictureBox focused;
 
@@ -78,6 +82,10 @@ namespace Nine2012
                         pinkCnt--;
                         textBoxPinkCount.Text = "P : " + pinkCnt; // 남은 피스 개수 표시
 
+                        if (pinkCnt == 3)
+                        {
+                            pinkFly = true;
+                        }
                         // 승리 조건 검사1 : 피스 수가 3개 미만인 경우 
                         if (pinkCnt < 3)
                         {
@@ -113,6 +121,10 @@ namespace Nine2012
                         greenCnt--;
                         textBoxGreenCount.Text = "G : " + greenCnt; // 남은 피스 개수 표시
 
+                        if (greenCnt == 3)
+                        {
+                            greenFly = true;
+                        }
                         // 승리 조건 검사1 : 피스 수가 3개 미만인 경우 
                         if (pinkCnt < 3)
                         {
@@ -344,6 +356,15 @@ namespace Nine2012
         // 이동 가능 여부 검사
         private bool chkToGo(int oldRow, int oldCol, int row, int col)
         {
+            if (textBoxMessage.Text == "Green's Turn!" && greenFly)
+            {
+                return true;
+            }
+            else if (textBoxMessage.Text == "Pink's Turn!" && pinkFly)
+            {
+                return true;
+            }
+
             if ((oldCol == 0 && col == 7) || (oldCol == 7 && col == 0))
             {
                 if (row == oldRow) return true;
@@ -365,6 +386,7 @@ namespace Nine2012
                 if (row == oldRow) return true;
                 else return false;
             }
+
             return false;
         }
     }
